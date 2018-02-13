@@ -5,7 +5,8 @@ const control = require('../controllers/index.js');
 
 /* GET home page. */
 router.get('/',(req, res) => {
-   control.index(req,res)});
+   control.index(req,res)}).post('/index/submit',(req,res)=>{
+    control.indexSubmit(req, res)});
 router.get('/feedback', (req, res) => {
    control.feedback(req,res)});
  router.get('/thankyou', (req, res) => {
