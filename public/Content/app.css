@@ -89,3 +89,9 @@ a:hover {
 .login-form-1 .login-button.clicked.error {
   color: #e74c3c;
 }
+.logo {
+  padding: 15px 0;
+  font-size: 25px;
+  color: #aaaaaa;
+  font-weight: bold;
+}

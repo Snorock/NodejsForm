@@ -19,7 +19,7 @@
             <div class="logo">Feedback</div>
             <!-- Main Form -->
             <div class="login-form-1">
-                <form id="register-form" class="text-left">
+                <form id="feedback-form" class="text-left" action="/feedback" method="post">
                     <div class="login-form-main-message"></div>
                     <div class="main-login-form">
                         <div class="login-group">
@@ -28,12 +28,16 @@
                                 <input type="text" class="form-control" id="reg_username" name="reg_username" placeholder="username" value="<%= user %>">
                             </div>
                             <div class="form-group">
-                                <label for="reg_password" class="sr-only">Password</label>
-                                <input type="password" class="form-control" id="reg_password" name="reg_password" placeholder="password">
+                                    <label for="reg_date" class="sr-only">Date</label>
+                                    <input type="text" class="form-control" id="reg_date" name="reg_date" placeholder="date" value="<%= date %>">
                             </div>
                             <div class="form-group">
-                                <label for="reg_password_confirm" class="sr-only">Password Confirm</label>
-                                <input type="password" class="form-control" id="reg_password_confirm" name="reg_password_confirm" placeholder="confirm password">
+                                <label for="reg_fname" class="sr-only">First name</label>
+                                <input type="text" class="form-control" id="reg_fname" name="reg_fname" placeholder="First name">
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_lname" class="sr-only">Last name</label>
+                                <input type="text" class="form-control" id="reg_lname" name="reg_lname" placeholder="Last name">
                             </div>
                             
                             <div class="form-group">
@@ -41,27 +45,16 @@
                                 <input type="text" class="form-control" id="reg_email" name="reg_email" placeholder="email">
                             </div>
                             <div class="form-group">
-                                <label for="reg_fullname" class="sr-only">Full Name</label>
-                                <input type="text" class="form-control" id="reg_fullname" name="reg_fullname" placeholder="full name">
+                                <label for="reg_subject" class="sr-only">Subject</label>
+                                <input type="text" class="form-control" id="reg_subject" name="reg_subject" placeholder="Subject" >
                             </div>
+                            <div class="form-group">
+                                    <label for="reg_feedback" class="sr-only">Feedback</label>
+                                    <textarea rows="4" type="text" class="form-control" id="reg_feedback" name="reg_feedback" placeholder="Feedback" ></textarea>
+                                </div>
                             
-                            <div class="form-group login-group-checkbox">
-                                <input type="radio" class="" name="reg_gender" id="male" placeholder="username">
-                                <label for="male">male</label>
-                                
-                                <input type="radio" class="" name="reg_gender" id="female" placeholder="username">
-                                <label for="female">female</label>
-                            </div>
-                            
-                            <div class="form-group login-group-checkbox">
-                                <input type="checkbox" class="" id="reg_agree" name="reg_agree">
-                                <label for="reg_agree">i agree with <a href="#">terms</a></label>
-                            </div>
                         </div>
                         <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
-                    </div>
-                    <div class="etc-login-form">
-                        <p>already have an account? <a href="#">login here</a></p>
                     </div>
                 </form>
             </div>

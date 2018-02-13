@@ -5,7 +5,8 @@ module.exports.index = function(req, res) {
   }
 module.exports.feedback = function(req, res) {
     let usern = req.session.login;
-    res.render('feedback',{user: usern});
+    let cdate = (new Date()).toLocaleDateString();
+    res.render('feedback',{user: usern, date: cdate});
   }
   module.exports.thankyou = function(req, res) {
     res.render('thankyou');

@@ -14,7 +14,8 @@ router.get('/',(req, res) => {
     control.feedback(req, res)}});
      
 router.get('/feedback', (req, res) => {
-   control.feedback(req,res)});
+   control.feedback(req,res)}).post('/feedback', (req, res) => {
+   control.thankyou(req,res)});
  router.get('/thankyou', (req, res) => {
    control.thankyou(req,res)});
 
