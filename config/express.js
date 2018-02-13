@@ -4,6 +4,7 @@ let path = require('path'); // built-in node module
 let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
+let expressSession = require('express-session');
 
 let index = require('../app/routes/index'); // define the main route
 
@@ -21,6 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.static(path.join(__dirname,'../node_modules')));
+app.use(expressSession({secret:'secret', saveUninitialized: false, resave: false}));
 
 app.use('/', index); // main routing file
 
