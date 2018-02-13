@@ -13,7 +13,7 @@
   "repository": {
     "url": "github.com/CentennialCollege/COMP308-W2018-Lesson2.git"
   },
-  "author": "Tom Tsiliopoulos <tsiliopoulos@hotmail.com>",
+  "author": "Igor Brovchenko",
   "license": "ISC",
   "dependencies": {
     "body-parser": "~1.18.2",
